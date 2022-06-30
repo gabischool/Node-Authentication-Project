@@ -1,0 +1,28 @@
+{
+  "name": "node-auth-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "knex-cleaner": "^1.3.1",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "knex": "^2.0.0",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/archive/refs/tags/v4.2.0.tar.gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
